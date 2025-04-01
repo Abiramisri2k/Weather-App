@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+*{
+    font-family: "Lexend Deca", sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #232d40;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container{
+    width: 390px;
+    padding: 24px;
+    background-color: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(255, 255, 255, 0.2);
+}
+.Input-container{
+    display: flex;
+    align-items: center;
+    border: 2px solid #333;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+.input-text{
+    flex: 1;
+    height: 30px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    padding: 8px;
+    background-color: #fafafa;
+}
+
+.search{
+    padding: 8px;
+    height: 20px;
+    cursor: pointer;
+    
+}
+.search img{
+    width: 24px;
+    height: 24px;
+    
+}
+.image{
+    text-align: center;
+    height: 100px;
+    margin-bottom: 24px;
+}
+.image img{
+    width: 120px;
+    height: 120px;
+}
+
+.temp, .city, .country{
+    margin-top: 4px;
+    font-size: 24px;
+    color: #333;
+    text-transform: uppercase;
+    text-align: center;
+}
+.temp{
+    font-weight: 500;
+}
+.city{
+    color: #2351dd;
+}
+
+.country{
+    font-size: 16px;
+    color: #888;
+    font-weight: 500;
+}
+
+.lat,.lon{
+    color: #888;
+}
+
+.cord{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+    margin-top: 8px;
+    text-align: center;
+}
+
+.cord div{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding: 8px;
+}
+.cord div span{
+    font-size: 14px;
+}
+
+.humidity-percent,
+.wind-speed,
+.cord div span:nth-child(2){
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+    padding-top: 4px;
+}
+
+.data-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.element {
+    text-align: center;
+}
+
+.icon{
+    height: 80px;
+    width: 80px;
+}
+
+.text {
+    font-size: 12px;
+    color: #888;
+}
+
+.city-not-found,
+.loading-message,
+.error-message {
+    margin-top: 10px;
+    color: #888;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
